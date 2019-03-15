@@ -8,7 +8,14 @@
 
 #import "Constants.h"
 
-NSString * const kConstantInfoView_StartButtonHighlightedKey = @"highlighted";
+NSString * const kConstant_InfoViewStartButtonHighlightedKey = @"highlighted";
+NSString * const kConstant_FounderPropertyKey = @"founder";
+NSString * const kConstant_NamePropertyKey = @"name";
+NSString * const kConstant_EmployeesPropertyKey = @"employees";
+
+NSString * const kConstantNotification_DoIpoCompleted = @"kConstantNotification_DoIpoCompleted";
+NSString * const kConstantNotification_RunMarketingCampaignCompleted = @"kConstantNotification_RunMarketingCampaignCompleted";
+NSString * const kConstantNotification_DidAllWork = @"kConstantNotification_DoAllWorkCompleted";
 
 @implementation Constants
 

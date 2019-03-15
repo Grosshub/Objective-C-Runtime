@@ -17,6 +17,17 @@
 		879EF901223AFD9E00ECADE0 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF900223AFD9E00ECADE0 /* MainView.m */; };
 		879EF90B223AFF9900ECADE0 /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF90A223AFF9900ECADE0 /* ColorManager.m */; };
 		879EF910223B1BC200ECADE0 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF90F223B1BC200ECADE0 /* Constants.m */; };
+		879EF915223B263400ECADE0 /* arrow-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 879EF912223B263400ECADE0 /* arrow-back@2x.png */; };
+		879EF916223B263400ECADE0 /* arrow-back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 879EF913223B263400ECADE0 /* arrow-back@3x.png */; };
+		879EF917223B263400ECADE0 /* arrow-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 879EF914223B263400ECADE0 /* arrow-back.png */; };
+		879EF91A223B274C00ECADE0 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF919223B274C00ECADE0 /* Company.m */; };
+		879EF91D223B275B00ECADE0 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF91C223B275B00ECADE0 /* Employee.m */; };
+		879EF923223B27BC00ECADE0 /* Marketer.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF922223B27BC00ECADE0 /* Marketer.m */; };
+		879EF926223B27DE00ECADE0 /* Founder.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF925223B27DE00ECADE0 /* Founder.m */; };
+		879EF929223B27F800ECADE0 /* Developer.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF928223B27F800ECADE0 /* Developer.m */; };
+		879EF92C223B2D9300ECADE0 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF92B223B2D9300ECADE0 /* MainTableViewController.m */; };
+		879EF92F223B2E0200ECADE0 /* EmployeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF92E223B2E0200ECADE0 /* EmployeeTableViewCell.m */; };
+		879EF934223B594400ECADE0 /* HighlightedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 879EF933223B594400ECADE0 /* HighlightedButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +50,25 @@
 		879EF90A223AFF9900ECADE0 /* ColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
 		879EF90E223B1BC200ECADE0 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		879EF90F223B1BC200ECADE0 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		879EF912223B263400ECADE0 /* arrow-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back@2x.png"; sourceTree = "<group>"; };
+		879EF913223B263400ECADE0 /* arrow-back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back@3x.png"; sourceTree = "<group>"; };
+		879EF914223B263400ECADE0 /* arrow-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back.png"; sourceTree = "<group>"; };
+		879EF918223B274C00ECADE0 /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		879EF919223B274C00ECADE0 /* Company.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		879EF91B223B275B00ECADE0 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		879EF91C223B275B00ECADE0 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		879EF921223B27BC00ECADE0 /* Marketer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marketer.h; sourceTree = "<group>"; };
+		879EF922223B27BC00ECADE0 /* Marketer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Marketer.m; sourceTree = "<group>"; };
+		879EF924223B27DE00ECADE0 /* Founder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Founder.h; sourceTree = "<group>"; };
+		879EF925223B27DE00ECADE0 /* Founder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Founder.m; sourceTree = "<group>"; };
+		879EF927223B27F800ECADE0 /* Developer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
+		879EF928223B27F800ECADE0 /* Developer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Developer.m; sourceTree = "<group>"; };
+		879EF92A223B2D9300ECADE0 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		879EF92B223B2D9300ECADE0 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		879EF92D223B2E0200ECADE0 /* EmployeeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeTableViewCell.h; sourceTree = "<group>"; };
+		879EF92E223B2E0200ECADE0 /* EmployeeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeTableViewCell.m; sourceTree = "<group>"; };
+		879EF932223B594400ECADE0 /* HighlightedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighlightedButton.h; sourceTree = "<group>"; };
+		879EF933223B594400ECADE0 /* HighlightedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighlightedButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +141,7 @@
 		879EF8F1223AFCCC00ECADE0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				879EF911223B25FE00ECADE0 /* Icons */,
 				879EF8E0223AFC4C00ECADE0 /* Assets.xcassets */,
 				879EF8E2223AFC4C00ECADE0 /* LaunchScreen.storyboard */,
 			);
@@ -140,6 +171,8 @@
 			children = (
 				879EF8F4223AFD4F00ECADE0 /* MainViewController.h */,
 				879EF8F5223AFD4F00ECADE0 /* MainViewController.m */,
+				879EF92A223B2D9300ECADE0 /* MainTableViewController.h */,
+				879EF92B223B2D9300ECADE0 /* MainTableViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -147,6 +180,8 @@
 		879EF902223AFF1D00ECADE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				879EF930223B40E400ECADE0 /* Company */,
+				879EF931223B40EC00ECADE0 /* Employees */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +200,8 @@
 			children = (
 				879EF8FC223AFD9500ECADE0 /* InfoView.h */,
 				879EF8FD223AFD9500ECADE0 /* InfoView.m */,
+				879EF932223B594400ECADE0 /* HighlightedButton.h */,
+				879EF933223B594400ECADE0 /* HighlightedButton.m */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -174,6 +211,8 @@
 			children = (
 				879EF8FF223AFD9E00ECADE0 /* MainView.h */,
 				879EF900223AFD9E00ECADE0 /* MainView.m */,
+				879EF92D223B2E0200ECADE0 /* EmployeeTableViewCell.h */,
+				879EF92E223B2E0200ECADE0 /* EmployeeTableViewCell.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -203,6 +242,40 @@
 				879EF90F223B1BC200ECADE0 /* Constants.m */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		879EF911223B25FE00ECADE0 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				879EF914223B263400ECADE0 /* arrow-back.png */,
+				879EF912223B263400ECADE0 /* arrow-back@2x.png */,
+				879EF913223B263400ECADE0 /* arrow-back@3x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		879EF930223B40E400ECADE0 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				879EF918223B274C00ECADE0 /* Company.h */,
+				879EF919223B274C00ECADE0 /* Company.m */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		879EF931223B40EC00ECADE0 /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				879EF91B223B275B00ECADE0 /* Employee.h */,
+				879EF91C223B275B00ECADE0 /* Employee.m */,
+				879EF924223B27DE00ECADE0 /* Founder.h */,
+				879EF925223B27DE00ECADE0 /* Founder.m */,
+				879EF921223B27BC00ECADE0 /* Marketer.h */,
+				879EF922223B27BC00ECADE0 /* Marketer.m */,
+				879EF927223B27F800ECADE0 /* Developer.h */,
+				879EF928223B27F800ECADE0 /* Developer.m */,
+			);
+			path = Employees;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879EF916223B263400ECADE0 /* arrow-back@3x.png in Resources */,
 				879EF8E4223AFC4C00ECADE0 /* LaunchScreen.storyboard in Resources */,
 				879EF8E1223AFC4C00ECADE0 /* Assets.xcassets in Resources */,
+				879EF917223B263400ECADE0 /* arrow-back.png in Resources */,
+				879EF915223B263400ECADE0 /* arrow-back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +352,20 @@
 			files = (
 				879EF90B223AFF9900ECADE0 /* ColorManager.m in Sources */,
 				879EF8DC223AFC4A00ECADE0 /* InfoViewController.m in Sources */,
+				879EF92C223B2D9300ECADE0 /* MainTableViewController.m in Sources */,
+				879EF91D223B275B00ECADE0 /* Employee.m in Sources */,
 				879EF8E7223AFC4C00ECADE0 /* main.m in Sources */,
+				879EF923223B27BC00ECADE0 /* Marketer.m in Sources */,
 				879EF910223B1BC200ECADE0 /* Constants.m in Sources */,
+				879EF92F223B2E0200ECADE0 /* EmployeeTableViewCell.m in Sources */,
+				879EF926223B27DE00ECADE0 /* Founder.m in Sources */,
 				879EF8D9223AFC4A00ECADE0 /* AppDelegate.m in Sources */,
 				879EF8FE223AFD9500ECADE0 /* InfoView.m in Sources */,
+				879EF934223B594400ECADE0 /* HighlightedButton.m in Sources */,
 				879EF8F6223AFD4F00ECADE0 /* MainViewController.m in Sources */,
+				879EF91A223B274C00ECADE0 /* Company.m in Sources */,
 				879EF901223AFD9E00ECADE0 /* MainView.m in Sources */,
+				879EF929223B27F800ECADE0 /* Developer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

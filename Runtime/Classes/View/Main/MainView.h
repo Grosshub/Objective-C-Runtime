@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HighlightedButton.h"
 
 @interface MainView : UIView
+
+@property (nonatomic) UITableView * tableView;
+@property (nonatomic) HighlightedButton * actionButton;
 
 @end

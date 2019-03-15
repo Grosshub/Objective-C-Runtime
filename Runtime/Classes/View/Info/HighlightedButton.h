@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  HighlightedButton.h
 //  Runtime
 //
 //  Created by Alexey Gross on 15/03/2019.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MainView.h"
 
-@interface MainViewController : UIViewController
-
-@property (nonatomic) MainView * mainView;
+@interface HighlightedButton : UIButton {
+    UIColor * mainColor;
+    UIColor * highlightedColor;
+}
 
 @end

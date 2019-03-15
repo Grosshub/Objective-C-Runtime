@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString * const kConstantInfoView_StartButtonHighlightedKey;
+extern NSString * const kConstant_InfoViewStartButtonHighlightedKey;
+extern NSString * const kConstant_FounderPropertyKey;
+extern NSString * const kConstant_NamePropertyKey;
+extern NSString * const kConstant_EmployeesPropertyKey;
+
+extern NSString * const kConstantNotification_DoIpoCompleted;
+extern NSString * const kConstantNotification_RunMarketingCampaignCompleted;
+extern NSString * const kConstantNotification_DidAllWork;
 
 @interface Constants : NSObject
 

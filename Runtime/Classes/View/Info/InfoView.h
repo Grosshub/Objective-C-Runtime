@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HighlightedButton.h"
 
 @interface InfoView : UIView
 
 @property (nonatomic) UILabel * titleLabel;
 @property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) UIButton * startButton;
+@property (nonatomic) HighlightedButton * startButton;
 
 @end
 
