@@ -41,6 +41,13 @@
         [_positionLabel setTextAlignment:NSTextAlignmentLeft];
         [_positionLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self addSubview:_positionLabel];
+        
+        _salaryLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        [_salaryLabel setFont:[UIFont systemFontOfSize:16 weight:UIFontWeightRegular]];
+        [_salaryLabel setTextColor:fullnameColor];
+        [_salaryLabel setTextAlignment:NSTextAlignmentLeft];
+        [_salaryLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [self addSubview:_salaryLabel];
     }
     return self;
 }
@@ -62,6 +69,7 @@
     
     [self.positionLabel setText:position];
     [self.fullnameLabel setText:employee.fullname];
+    [self.salaryLabel setText:[NSString stringWithFormat:@"$%d", employee.salary]];
     
     [self layoutIfNeeded];
 }
@@ -80,11 +88,15 @@
     [super layoutSubviews];
     
     
+    [self.salaryLabel sizeToFit];
+    CGFloat salaryLabelWidth = self.salaryLabel.frame.size.width;
+    
+    
     CGFloat labelSideOffset = 10;
     CGFloat labelTopOffset = 5;
     self.fullnameLabel.frame = CGRectMake(labelSideOffset,
                                           labelTopOffset,
-                                          self.frame.size.width - labelSideOffset * 2,
+                                          self.frame.size.width - labelSideOffset * 2 - salaryLabelWidth,
                                           20);
     
     
@@ -92,6 +104,12 @@
                                           self.fullnameLabel.frame.origin.y + self.fullnameLabel.frame.size.height + 3,
                                           self.fullnameLabel.frame.size.width,
                                           self.fullnameLabel.frame.size.height);
+    
+    
+    self.salaryLabel.frame = CGRectMake(self.frame.size.width - salaryLabelWidth - labelSideOffset,
+                                        self.fullnameLabel.frame.origin.y,
+                                        salaryLabelWidth,
+                                        self.salaryLabel.frame.size.height);
 }
 
 @end

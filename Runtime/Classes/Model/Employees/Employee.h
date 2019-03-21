@@ -17,5 +17,6 @@
 @property (nonatomic, copy) NSString * name;
 @property (nonatomic, copy) NSString * lastname;
 @property (nonatomic, copy) NSString * fullname;
+@property (nonatomic, assign) int salary;
 
 @end

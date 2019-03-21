@@ -13,6 +13,7 @@
 
 @property (nonatomic) UILabel * fullnameLabel;
 @property (nonatomic) UILabel * positionLabel;
+@property (nonatomic) UILabel * salaryLabel;
 
 @property (nonatomic) Employee * employee;
 

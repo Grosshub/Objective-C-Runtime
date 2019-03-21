@@ -90,6 +90,14 @@
                                                                    target:self.navigationController
                                                                    action:@selector(popViewControllerAnimated:)];
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    
+    
+    UIBarButtonItem * sumButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sum"]
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(sumAllSalary)];
+    self.navigationItem.rightBarButtonItem = sumButton;
 }
 
 - (void)setupTargets {
@@ -100,34 +108,43 @@
 
 - (void)dataInit {
     
+    int salaryMax = 10000;
+    
     // Make a list of all employees
     Employee * founder = [[Founder alloc] init];
     founder.name = @"John";
     founder.lastname = @"Smith";
+    founder.salary = arc4random_uniform(salaryMax);
     
     Employee * newFounder = [[Founder alloc] init];
     newFounder.name = @"Karl";
     newFounder.lastname = @"Schmidt";
+    newFounder.salary = arc4random_uniform(salaryMax);
     
     Employee * marketer_1 = [[Marketer alloc] init];
     marketer_1.name = @"Rud Van";
     marketer_1.lastname = @"Nistelrooy";
+    marketer_1.salary = arc4random_uniform(salaryMax);
     
     Employee * marketer_2 = [[Marketer alloc] init];
     marketer_2.name = @"Oliver";
     marketer_2.lastname = @"Kahn";
+    marketer_2.salary = arc4random_uniform(salaryMax);
     
     Employee * developer_1 = [[Developer alloc] init];
     developer_1.name = @"Raul";
     developer_1.lastname = @"Gonzalez";
+    developer_1.salary = arc4random_uniform(salaryMax);
     
     Employee * developer_2 = [[Developer alloc] init];
     developer_2.name = @"Francesco";
     developer_2.lastname = @"Totti";
+    developer_2.salary = arc4random_uniform(salaryMax);
     
     Employee * developer_3 = [[Developer alloc] init];
     developer_3.name = @"Francesco";
     developer_3.lastname = @"Totti";
+    developer_3.salary = arc4random_uniform(salaryMax);
     
     // Set ivars with KVC
     [self.company setValue:@"Galley" forKey:kConstant_NamePropertyKey];
@@ -180,6 +197,14 @@
             [self.company doAllWork];
         }
     }
+}
+
+- (void)sumAllSalary {
+    
+    // KVC: how to operate with objects via keyPath
+    NSNumber * allSalary = [self.company valueForKeyPath:@"employees.@sum.salary"];
+    
+    [self showAlertWithTitle:[NSString stringWithFormat:@"$%ld", (long)allSalary.integerValue] message:@"Report on total wages"];
 }
 
 #pragma mark - Alerts
