@@ -8,6 +8,7 @@
 
 #import "Employee.h"
 #import "Company.h"
+#import "Constants.h"
 
 @implementation Employee
 
@@ -15,12 +16,23 @@
     self = [super init];
     if (self) {
         
-        [self addObserver:self forKeyPath:@"fullname" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     }
     return self;
 }
 
 #pragma mark - KVO
+
+- (void)setName:(NSString *)name {
+    
+    [self addObserver:self forKeyPath:kConstant_FullnamePropertyKey options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    _name = name;
+}
+
+- (void)setLastname:(NSString *)lastname {
+    
+    [self addObserver:self forKeyPath:kConstant_FullnamePropertyKey options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    _lastname = lastname;
+}
 
 // KVO: dependent properties
 - (NSString *)fullname {
@@ -46,6 +58,7 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
+    [self removeObserver:self forKeyPath:kConstant_FullnamePropertyKey];
 }
 
 #pragma mark - Message Forwarding

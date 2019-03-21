@@ -12,6 +12,7 @@ extern NSString * const kConstant_InfoViewStartButtonHighlightedKey;
 extern NSString * const kConstant_FounderPropertyKey;
 extern NSString * const kConstant_NamePropertyKey;
 extern NSString * const kConstant_EmployeesPropertyKey;
+extern NSString * const kConstant_FullnamePropertyKey;
 
 extern NSString * const kConstantNotification_DoIpoCompleted;
 extern NSString * const kConstantNotification_RunMarketingCampaignCompleted;

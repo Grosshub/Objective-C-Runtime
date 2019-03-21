@@ -12,6 +12,7 @@ NSString * const kConstant_InfoViewStartButtonHighlightedKey = @"highlighted";
 NSString * const kConstant_FounderPropertyKey = @"founder";
 NSString * const kConstant_NamePropertyKey = @"name";
 NSString * const kConstant_EmployeesPropertyKey = @"employees";
+NSString * const kConstant_FullnamePropertyKey = @"fullname";
 
 NSString * const kConstantNotification_DoIpoCompleted = @"kConstantNotification_DoIpoCompleted";
 NSString * const kConstantNotification_RunMarketingCampaignCompleted = @"kConstantNotification_RunMarketingCampaignCompleted";

@@ -59,6 +59,7 @@
     [super viewWillDisappear:animated];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self removeObserver:self forKeyPath:kConstant_EmployeesPropertyKey];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -203,7 +204,6 @@
     
     // KVC: how to operate with objects via keyPath
     NSNumber * allSalary = [self.company valueForKeyPath:@"employees.@sum.salary"];
-    
     [self showAlertWithTitle:[NSString stringWithFormat:@"$%ld", (long)allSalary.integerValue] message:@"Report on total wages"];
 }
 

@@ -9,6 +9,8 @@
 #import "Company.h"
 #import <objc/runtime.h>
 
+static void * const CompanyKVOContext = (void *)&CompanyKVOContext;
+
 @interface Company()
 
 // That's also possible to set ivars from Categories in .m file of Class via KVC
